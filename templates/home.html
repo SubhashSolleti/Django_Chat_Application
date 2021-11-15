@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   @font-face {
+     font-family: 'Aeonik-medium';
+     src: url(Aeonik-Medium.otf);
+   }
+   @font-face {
+     font-family: 'Aeonik';
+     src: url(Aeonik-Regular.otf);}
+    body {
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 0 20px;
+      /* background-color: #deeaee; */
+      background:url('https://student.srmap.edu.in/srmapstudentcorner/resources/images/Ariel-View-1.jpg');
+      backdrop-filter: blur(2px);
+    }
+    .logo{
+      margin-left: -55%;
+      background: none;
+      width: auto;
+      height: auto;
+    }
+  
+    .title{
+      margin-top: 10%;
+      opacity: 0.8;
+      font-family: Aeonik-medium;
+      font-size: 25px;
+      padding: 0.5px;
+    }
+
+    .container {
+      border: 2px solid #dedede;
+      background-color: #f1f1f1d2;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10% 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+    }
+
+    .darker {
+      border-color: #ccc;
+      background-color: #ddd;
+    }
+
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    .container img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right: 0;
+    }
+
+    .time-right {
+      float: right;
+      color: #aaa;
+    }
+
+    .time-left {
+      float: left;
+      color: #999;
+    }
+    .main{
+      float: right;
+      background-color: #f1f1f1d2;
+      margin-right: -60%;
+    }
+    .names{
+      font-family: Aeonik;
+      font-size: 20px;
+      font-weight: lighter;
+      float: left;
+      margin-left: -60%;
+      background-color: #f1f1f1d2;
+      margin-top: 20%;
+      
+    }
+  </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1039.0" data-gr-ext-installed="">
+  <div class="logo">
+    <img src="https://student.srmap.edu.in/srmapstudentcorner/resources/images/srmaplogo.png" alt="SRM Logo">
+  </div>
+  
+<div class="names">
+  <h2>Group 8</h2>
+  <marquee >
+    <p>
+      <h3>Solleti Krishna Chaitanya Subhash(AP20110010232)</h3>
+    <h3>Kumar Sashank(AP20110010229)</h3>
+  <h3>Sai Koushik Ananthoju(AP20110010243)</h3>
+  <h3>Geetha Sri Abhinay Parimisetty(AP20110010221)</h3>
+  <h3>Chitra V Davey(AP20110010214)</h3> 
+</p>
+</marquee>
+  </div>
+
+<div class="main">
+  <div class=title align="center">
+    <h2>Django Chat Application</h2>
+  </div>
+  <div class="container">
+    <style>
+      input[type=text],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        opacity: 1;
+      }
+
+      input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+
+    <form id="post-form" method="POST" action="checkview">
+      {% csrf_token %}
+      <label>Room Name</label>
+      <input type="text" name="room_name" id="room_name" width="100px" />
+      <label>Username</label>
+      <input type="text" name="username" id="username" width="100px" />
+      <input type="submit" value="Enter Room">
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
